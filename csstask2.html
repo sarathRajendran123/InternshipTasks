@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul.a1 {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+        width: 200px;
+        background-color: lightblue;
+      }
+
+      li.a1 {
+        font-weight: bold;
+        display:block;
+        color: blue;
+        padding: 8px 16px;
+      }
+
+      li.a1:hover {
+        background-color: orange;
+        color: white;
+      }
+
+      ul.a2 {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+        background-color: rgb(211, 211, 211);
+      }
+
+      li.a2 {
+        float: left;
+        border-right: 1px solid blue;
+      }
+
+      li.a2:last-child {
+        border-right: none;
+      }
+
+      li.a2 {
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+      }
+
+      li.a2:hover:not(.active) {
+        background-color: rgb(130, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Horizontal Navigation Bar</h3>
+    <div
+      style="
+        border: solid black;
+        border-width: thin;
+        width: fit-content;
+        padding: 10px;
+      "
+    >
+      <ul class="a1">
+        <li class="a1">Home</li>
+        <li class="a1">Java</li>
+        <li class="a1">CSS</li>
+        <li class="a1">HTML</li>
+        <li class="a1">Bootstrap</li>
+      </ul>
+    </div>
+    <br />
+    <hr color="black" />
+    <br />
+
+    <h3>Vertical Navigatoin Bar</h3>
+    <div
+      style="
+        border: solid black;
+        border-width: thin;
+        width: fit-content;
+        padding: 10px;
+      "
+    >
+      <ul class="a2">
+        <li class="a2">Home</li>
+        <li class="a2">Java</li>
+        <li class="a2">CSS</li>
+        <li class="a2">HTML</li>
+        <li class="a2" style="float: right; width: 80px"></li>
+      </ul>
+    </div>
+  </body>
+</html>
